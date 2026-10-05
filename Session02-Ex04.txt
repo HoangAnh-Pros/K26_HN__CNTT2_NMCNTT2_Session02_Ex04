@@ -1,0 +1,26 @@
+1. Tóm tắt 4 chuẩn đặt tên:
+kebab-case (gio-hang.css): Viết thường, phân cách bằng dấu -. Dùng cho tệp HTML, CSS, URL web.
+
+snake_case (main_app.py): Viết thường, phân cách bằng dấu _. Dùng cho tệp và biến Python, Database.
+
+camelCase (getUserInfo): Từ đầu viết thường, từ sau viết hoa chữ cái đầu. Dùng cho biến, hàm trong JavaScript/Java.
+
+PascalCase (UserProfile): Viết hoa chữ cái đầu mỗi từ. Dùng cho Class, Component (React/Vue).
+
+2. Chốt giải pháp cho nhóm K26:
+Tệp HTML, CSS, Ảnh: Dùng kebab-case (VD: index.html, main-style.css, banner-home.png). Chuẩn SEO và tối ưu cho Web.
+
+Tệp Python: Dùng snake_case (VD: app_main.py). Tuân thủ đúng chuẩn PEP 8 của Python.
+
+Tại sao không đồng bộ 1 chuẩn duy nhất?
+
+Xung đột cú pháp: Lệnh Python import my-script (kebab-case) sẽ bị lỗi ngay vì Python hiểu dấu - là phép trừ.
+
+Chuẩn hóa SEO & Hệ thống: Web cần kebab-case để Google đọc URL tốt hơn, còn Python cần snake_case để code chạy bình thường.
+
+3. Tại sao cấm Tiếng Việt có dấu & Khoảng trắng?
+Lỗi đường dẫn (404): Máy chủ Web (Linux) sẽ tự đổi khoảng trắng và dấu thành mã %20, %E1%BA%A3... làm hỏng link ảnh/file.
+
+Lỗi hệ điều hành: Windows không phân biệt hoa/thường, nhưng Linux (máy chủ thật) có phân biệt.
+
+Lỗi Terminal: Khoảng trắng làm dòng lệnh hiểu nhầm tệp 1 tên thành nhiều đối số riêng biệt.
